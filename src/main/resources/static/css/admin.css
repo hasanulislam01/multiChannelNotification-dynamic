@@ -1,0 +1,129 @@
+body{
+    margin:0 50px 50px 50px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* background-color: #f0f0f0; */
+}
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+  }
+.nav-left span {
+    font-size: 18px;
+}
+.nav-right i {
+    font-size: 20px;
+    cursor: pointer; /* Add hover effect (optional) */
+}
+
+.alert-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* .custom-list-item {
+    background-color: #f5f5f5;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+} */
+
+.dropdown-menu li{
+    background-color: #dddddd;
+    padding: 7px;
+    /* border-bottom: 1px solid #ddd; */
+    border-radius: 5px;
+    margin: 4px;
+    width: 400px;
+}
+
+/* #notification-show{
+    width: 1000px;
+} */
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .dropdown1 {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: #ddd; text-decoration: none;}
+
+  .dropdown1:hover .dropdown-content {display: block;}
+
+  .dropdown1:hover .dropbtn {background-color: #3e8e41;}
+
+.form-control{
+    width: 1200px;
+}
+
+.scrolling-text {
+    /* text-align: center; */
+    color: #616161;
+    opacity: 80%;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing content */
+    position: relative; /* Ensure correct positioning */
+    animation: scrollText 10s linear infinite alternate; /* Apply the animation */
+}
+
+@keyframes scrollText {
+    0% {
+        left: 85%; /* Start off-screen to the right */
+    }
+    100% {
+        left: 0%; /* Move off-screen to the left */
+    }
+}
+
+button#clear-notification-btn {
+    margin-left: 187px;
+}
+
+li {
+    transition: opacity 0.5s ease;
+}
+.remove {
+        opacity: 0;
+    }
